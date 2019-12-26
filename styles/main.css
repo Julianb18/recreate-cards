@@ -9751,11 +9751,28 @@ html {
 }
 
 body {
+  background-color: #f3b5ff;
+}
+
+.skew-hero {
+  background: #e9e3ff;
+  padding: 100px 0;
+  transform: skew(0deg, 6deg) translateY(-135px);
+  border-bottom: 15px solid #af99ff;
+}
+
+.hero-container {
+  padding: 120px 200px;
+  transform: skew(0deg, -6deg);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.card-container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f3b5ff;
 }
 
 .cards {
@@ -9785,6 +9802,17 @@ h3 {
 
 h4 {
   font-size: 1.6rem;
+  font-weight: normal;
+}
+
+h5 {
+  font-size: 4.2rem;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+h6 {
+  font-size: 3.2rem;
   font-weight: normal;
 }
 
