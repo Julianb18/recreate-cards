@@ -1,0 +1,67 @@
+/* ------- font-sizes---------- */
+h1 {
+  margin: 0;
+  font-size: 3.2rem;
+  font-weight: bold;
+  padding: 0 0 21px 32px;
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+h3 {
+  font-size: 4.2rem;
+  font-weight: bold;
+  align-self: flex-end;
+  margin: 0;
+}
+h4 {
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+p {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+.change-font {
+  font-weight: bolder;
+  color: #ffffff;
+  padding: 4px 12px;
+  line-height: 1.19;
+}
+.enrolled-students {
+  font-weight: bolder;
+}
+/* ------------------------------ */
+
+/* ----------Colour schemes----------*/
+
+$linear-red: linear-gradient(278.9deg, #ff00e5 -46.53%, #ff8a00 122.31%);
+$linear-blue: linear-gradient(278.9deg, #fa00ff -46.53%, #2400ff 122.31%);
+$linear-green: linear-gradient(278.9deg, #ecff14 -46.53%, #0ccabe 122.31%);
+
+$solid-red: #ffeadf;
+$solid-blue: #e5dbff;
+$solid-green: #d6fff4;
+
+/*-----------------------------*/
+
+.cards {
+  background: $linear-red;
+}
+.card-blue {
+  background: $linear-blue;
+}
+.card-green {
+  background: $linear-green;
+}
+
+.card-bottom {
+  background-color: $solid-red;
+}
+.card-b-blue {
+  background-color: $solid-blue;
+}
+.card-b-green {
+  background-color: $solid-green;
+}

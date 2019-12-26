@@ -1,4 +1,6 @@
 // This is where you can import other stylesheets or write your scss code
+@import "./variables";
+@import "./hero";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 * {
@@ -20,13 +22,9 @@ body {
   background-color: rgb(243, 181, 255);
 }
 
-.card {
+.cards {
   width: 400px;
   border-radius: 10px 10px 10px 10px;
-}
-
-.align-cards {
-  display: flex;
 }
 
 /* ------- font-sizes---------- */
@@ -44,6 +42,7 @@ h3 {
   font-size: 4.2rem;
   font-weight: bold;
   align-self: flex-end;
+  margin: 0;
 }
 h4 {
   font-size: 1.6rem;
@@ -64,32 +63,14 @@ p {
 }
 /* ------------------------------ */
 
-/* --------card hero--------- */
-
-.hero {
-  min-height: 145px;
-  background: linear-gradient(278.9deg, #ff00e5 -46.53%, #ff8a00 122.31%);
-  border-radius: 10px 10px 0px 0px;
-  color: rgba(255, 255, 255, 0.7);
-  display: flex;
-  align-items: flex-end;
-  position: relative;
-}
-
-.bg-new {
-  background: rgba(255, 255, 255, 0.6);
-  position: absolute;
-  top: 18px;
-  right: 0;
-}
-
-/* ----------------------- */
 /* --------body of the card------------ */
-.card-body {
+.card-main {
   background-color: #ffffff;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  height: 244px;
+  position: relative;
 }
 .main-text {
   padding: 20px 32px 15px 32px;
@@ -99,32 +80,43 @@ p {
 }
 
 .pricing {
-  align-self: flex-end;
-  margin-right: 32px;
-  margin-top: 25px;
-  margin: 25px 32px 9px 0;
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
+  margin: 0 32px 9px 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .old-price {
   font-weight: lighter;
   color: #cacaca;
   text-decoration-line: line-through;
 }
+
+.single-pricing {
+  margin: 0 32px 9px 0;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 /* ------------------- */
 /* ----------footer of the card---------- */
-.card-end {
+.card-bottom {
   display: flex;
   justify-content: space-around;
-  background-color: #ffeadf;
   padding: 18px 32px;
   border-radius: 0 0 10px 10px;
 }
 .splitter {
   position: relative;
 }
-.card-end p {
+.card-bottom p {
   flex-basis: 50%;
+  margin: 0;
 }
 
 .splitter::after {
