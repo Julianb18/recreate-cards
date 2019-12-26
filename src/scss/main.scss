@@ -1,0 +1,138 @@
+// This is where you can import other stylesheets or write your scss code
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 181, 255);
+}
+
+.card {
+  width: 400px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.align-cards {
+  display: flex;
+}
+
+/* ------- font-sizes---------- */
+h1 {
+  margin: 0;
+  font-size: 3.2rem;
+  font-weight: bold;
+  padding: 0 0 21px 32px;
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+h3 {
+  font-size: 4.2rem;
+  font-weight: bold;
+  align-self: flex-end;
+}
+h4 {
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+p {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+.change-font {
+  font-weight: bolder;
+  color: #ffffff;
+  padding: 4px 12px;
+  line-height: 1.19;
+}
+.enrolled-students {
+  font-weight: bolder;
+}
+/* ------------------------------ */
+
+/* --------card hero--------- */
+
+.hero {
+  min-height: 145px;
+  background: linear-gradient(278.9deg, #ff00e5 -46.53%, #ff8a00 122.31%);
+  border-radius: 10px 10px 0px 0px;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.bg-new {
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 18px;
+  right: 0;
+}
+
+/* ----------------------- */
+/* --------body of the card------------ */
+.card-body {
+  background-color: #ffffff;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.main-text {
+  padding: 20px 32px 15px 32px;
+}
+.created-by {
+  padding-left: 32px;
+}
+
+.pricing {
+  align-self: flex-end;
+  margin-right: 32px;
+  margin-top: 25px;
+  margin: 25px 32px 9px 0;
+  display: flex;
+  flex-direction: column;
+}
+.old-price {
+  font-weight: lighter;
+  color: #cacaca;
+  text-decoration-line: line-through;
+}
+/* ------------------- */
+/* ----------footer of the card---------- */
+.card-end {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffeadf;
+  padding: 18px 32px;
+  border-radius: 0 0 10px 10px;
+}
+.splitter {
+  position: relative;
+}
+.card-end p {
+  flex-basis: 50%;
+}
+
+.splitter::after {
+  width: 0;
+  height: 100%;
+  content: "";
+  border: 1px solid #555555;
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+}
